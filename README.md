@@ -125,11 +125,15 @@ XFeat evaluation code will be released soon, alongside the training scripts. Ple
 
 ## Real-time Demo
 To demonstrate the capabilities of XFeat, we provide a real-time matching demo with Homography registration. Currently, you can experiment with XFeat, ORB and SIFT. You will need a working webcam. To run the demo and show the possible input flags, please run:
+
+为了证明XFeat的能力，我们提供了一个单应配准的实时匹配演示，。目前，您可以尝试XFeat、ORB和SIFT。您需要一个工作的网络摄像头。要运行演示并显示可能的输入标志，请运行：
 ```bash
 python3 realtime_demo.py -h
 ```
 
 Don't forget to press 's' to set a desired reference image. Notice that the demo only works correctly for planar scenes and rotation-only motion, because we're using a homography model.
+
+不要忘记按“s”键设置所需的参考图像。请注意，演示仅适用于平面场景和仅旋转的运动，因为我们使用的是单应模型。
 
 If you want to run the demo with XFeat, please run:
 ```bash
